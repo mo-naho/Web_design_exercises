@@ -1,0 +1,14 @@
+@charset "UTF-8";
+img{
+	width: 30%;
+}
+.right {
+	margin: 0 30px 30px 0;
+	background-color: lightyellow;
+}
+.slide{
+	width: 100%;
+}
+.slide img{
+	width: 90%;
+}

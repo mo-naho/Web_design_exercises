@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.right{
+	margin: 0 30px 30px 0;
+	background-color: lightyellow;
+}
+.fade {
+/*	width: 40%;*/
+}
+.fade img {
+	width: 100%;
+}
+.left-y{
+	float: left;
+	width: 40%;
+}
+.right-y{
+	float: right;
+	width: 55%;
+	margin-right: 20px;
+}
+.right-y p{
+	margin-left: 20px;
+}
