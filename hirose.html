@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>同女生も知らないプチ情報サイト</title>
+<link rel="shortcut icon" href="image/top/fabikon.png">
+<link href="css/hirose.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="logo"><a href="index.html"><img src="image/top/logo2.png"></a></div>
+<div class="line"></div>
+<menu class="left">
+	<table>
+		<tr><td><a href="hirose.html"><img src="image/top/hirose2.png"></a></td>
+			<td class="a"><a href="hirose.html">意外と知らない?<br>MSCレンタル機材</a></td></tr>
+		<tr><td><a href="kanou.html"><img src="image/top/kanou2.png"></a></td>
+			<td class="a"><a href="kanou.html">同志社女子大学の<br>アートなモノたち</a></td></tr>
+		<tr><td><a href="kojima.html"><img src="image/top/kojima2.png"></a></td>
+			<td class="a"><a href="kojima.html">DWCat！<br>~同女の猫に癒されたい~</a></td></tr>
+		<tr><td><a href="miura.html"><img src="image/top/miura2.png"></a></td>
+			<td class="a"><a href="miura.html">ラーコモ完全攻略<br>マニュアル</a></td></tr>
+		<tr><td><a href="yahanashi.html"><img src="image/top/yahanashi2.png"></a></td>
+			<td><a href="yahanashi.html">同女快適放浪旅</a></td></tr>
+	</table>
+</menu>
+
+
+<div class="right">
+	<div class="title"><h1>意外と知らない? MSCレンタル機材</h1>
+	<strong class="writer">廣瀬</strong></div>
+	<div class="article">
+		<p>私たち、情報メディア生が普段からお世話になっているMSC。<br>
+		機材のレンタルや授業でわからなかったことに対応してくれています。<br>
+		1眼レフやビデオカメラは授業で使うことが多いので借りたことのある人が多いと思います。<br>
+		そこで今回はあまり知られていない工作室のMSCの機材を紹介したいと思います。</p>
+
+		<h2>工作室のおすすめ、レア機材</h2>
+		<ol>
+			<li onClick="change(0)">3Dプリンター</li>
+			<li onClick="change(1)">デジタルスクリーン製版機(Tシャツとか)</li>
+			<li onClick="change(2)">カッティングプロッター</li>
+			<li onClick="change(3)">レーザーカッター</li>
+		</ol>
+		<img src="image/hirose/message1.png" name="photo">
+		<p id="text"></p>
+
+		<br><h2>レンタルのルール改定</h2>
+		<p>11月1日より延滞ペナルティが変わります。<br>
+		<strong>&lt;ペナルティ適用までの延滞時間&gt;</strong><br>
+		これまでは1時間延滞でペナルティ適用でしたが、これからは15分延滞でペナルティ適用となります。<br>
+		また、返却延滞理由書の作成に必要な教員とmscスタッフのサインが3名から5名に変更となります。
+		</p><br>
+	</div>
+</div>
+
+<script type="text/javascript">
+	file = new Array(4);
+	file[0] = "image/hirose/IMG_4709.jpg";
+	file[1] = "image/hirose/IMG_4713.jpg";
+	file[2] = "image/hirose/IMG_4715.jpg";
+	file[3] = "image/hirose/IMG_4710.jpg";
+	
+	text = new Array(4);
+	text[0] = "みなさん存在は知っていると思います3Dプリンターが工作室にあります。\nなかなか触れる代物ではないと思うので在学中に触れておくといいかも？\n3Dに興味のある人にはオススメです！";
+	text[1] = "自分で作ったデザインをTシャツなどに印刷したいという時、まず版が必要になります。\nパソコンで版下データを作ってこのゴッコプロ100に送信してスタートボタンを押すと版を作ってくれます。";
+	text[2] = "こちらはシールなどオリジナルグッズ作成に役立つカッティングプロッター。\n印刷物にカットラインデータを自動で合わせてスムーズにカット作業が行えます！";
+	text[3] = "パソコン上のデータ通りに紙、アクリル、金属など様々な素材の彫刻、切断が可能です。\n情報メディア科がよく使うillustrator上のデザインを使用して製品レベルのモノつくりができます。";
+	
+	function change(n){
+		document.photo.src = file[n];
+		document.getElementById("text").textContent = text[n];
+	}
+</script>
+
+</body>
+</html>
