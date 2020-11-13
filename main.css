@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+/*全体*/
+.right {
+	float: right;
+	width: 75%;
+	margin-bottom: 40px;
+}
+.left {
+	float: left;
+	width: 20%;
+}
+.clear{
+	clear: both;
+}
+.logo{
+	margin: 30px auto 15px;
+	text-align: center;
+}
+.logo img{
+	width: 500px;
+	border: none;
+}
+menu {
+	width: 260px;
+	padding-left: 20px;
+}
+menu a:hover{
+	color: gray;
+}
+table{
+	border-collapse: collapse;
+ 	border-spacing: 0;
+}
+tr:nth-child(2n){
+	border-top: 2px dashed darkgray;
+	border-bottom: 2px dashed darkgray;
+}
+tr img{
+	width: 50px;
+	height: auto;
+}
+td:nth-child(1){
+	padding: 7px 10px;
+}
+a {
+	color: black;
+	text-decoration: none;	
+}
+.line{
+	background-image: url(image/top/line1-2.png);
+	background-repeat: repeat-x;
+	height: 50px;
+}
+
+/*index.html*/
+div.left{
+	height: 530px;
+}
+div.left img{
+	margin-bottom: 0;
+}
+
+
+/*記事ページ*/
+.title{
+	padding: 4px 0;
+	width: 100%-30px;
+	border-left: 30px solid #FF9629;
+	background-color: #FFD13D;
+	display: block;
+}
+.title h1{
+	margin-left: 10px;
+}
+.writer{
+	float: right;
+	position: relative;
+	bottom: 30px;
+	right: 20px;
+}
+.writer::before{
+	content: "記者：";
+}
+.article{
+	margin: 0 30px 20px;
+}
+
