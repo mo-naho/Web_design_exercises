@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>同女生も知らないプチ情報サイト</title>
+<link rel="shortcut icon" href="image/top/fabikon.png">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+
+<body>
+<div class="logo"><a href="index.html"><img src="image/top/logo2.png"></a></div>
+<div class="line"></div>
+
+<menu class="left">
+	<table>
+		<tr><td><a href="hirose.html"><img src="image/top/hirose2.png"></a></td>
+			<td class="a"><a href="hirose.html">意外と知らない?<br>MSCレンタル機材</a></td></tr>
+		<tr><td><a href="kanou.html"><img src="image/top/kanou2.png"></a></td>
+			<td class="a"><a href="kanou.html">同志社女子大学の<br>アートなモノたち</a></td></tr>
+		<tr><td><a href="kojima.html"><img src="image/top/kojima2.png"></a></td>
+			<td class="a"><a href="kojima.html">DWCat！<br>~同女の猫に癒されたい~</a></td></tr>
+		<tr><td><a href="miura.html"><img src="image/top/miura2.png"></a></td>
+			<td class="a"><a href="miura.html">ラーコモ完全攻略<br>マニュアル</a></td></tr>
+		<tr><td><a href="yahanashi.html"><img src="image/top/yahanashi2.png"></a></td>
+			<td><a href="yahanashi.html">同女快適放浪旅</a></td></tr>
+	</table>
+</menu>
+
+<!--スライドここから-->
+<div class="slide right" style="width: 1050px; margin-right: 50px;">
+  <a href="hirose.html"><div class="left"><img src="image/top/hirose.png">
+  	<div class="right"><h3>意外と知らない?<br>MSCレンタル機材</h3>
+  	<p>情報メディア学科がお世話になっているMSC。<br>1眼レフなどよく授業で必要となる機材の他にも様々なものを借りることができます。<br>今回はあまり知られていない工作室の機材を紹介します。<br>また11月から変更となるレンタルの際のルールについてもお知らせします。</p>
+  	</div></div></a>
+  <a href="kanou.html"><div class="left"><img src="image/top/kanou.png">
+	 <div class="right"><h3>同志社女子大学の<br>アートなモノたち</h3>
+	 <p>同志社女子大学にはいろいろなところに少し変わった形をしている建造物や机、椅子があったり、作品を展示できるギャラリースペースがあったりもする。<br>そんなアートな同女の中でも、ラーニングコモンズの機能的な椅子や椅子に見えない椅子、校内の多くの場所に飾られている芸術的な絵、写真などを取り上げて記事にした。<br>あまり知られていない同女の一面を紹介する。</p></div></div></a>
+  <a href="kojima.html"><div class="left"><img src="image/top/kojima.png">
+ 	 <div class="right"><h3>DWCat！<br>〜同女の猫に癒されたい〜</h3>
+	 <p>同志社女子大学のエスカレーターを上がったところでよく見かける猫たち。<br>その様子を密かに記者自身がスマホで撮り貯めた写真をメインに、写真の可愛いポイントや撮影した時の状況のコメントを添えて紹介する記事。<br>また、コラムとして同女内で猫と接していく上での注意喚起を行う記事も掲載する。</p></div></div></a>
+  <a href="miura.html"><div class="left"><img src="image/top/miura.png">
+  	<div class="right"><h3>ラーコモ完全攻略マニュアル</h3>
+	<p>ラーニングコモンズは情メ生にとって便利な機能や機材が揃っています。<br>しかし、その全貌がどんなものなのかはあまり知られていません。<br>この記事にはラーニングコモンズってどんな場所なのか、どんなことが出来るのか、便利な活用情報などが載っています。<br>運営をしているLCスタッフのコメントと一緒にラーニングコモンズを紹介します。</p></div></div></a>
+  <a href="yahanashi.html"><div class="left"><img src="image/top/yahanashi.png">
+  	<div class="right"><h3>同女快適放浪旅</h3>
+	<p>同女をいかに快適に過ごすかに執着した記事を書きました。<br>コンセント、空調、雰囲気などから最適な場所をあげ、解説します。</p></div></div></a>
+</div>
+<!--スライドここまで-->
+
+
+
+<!--以下ひとまとまりを、bodyタグ閉じる直前に追加する-->
+<!--jQueryへのリンク-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!--スライド用プラグインへのリンク-->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<!--スライド用設定 ここから-->
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.slide').slick({
+	   dots: true, /*下部ドット なしの場合はfalseと書く*/
+	   infinite: true, /*無限スクロール*/
+		arrows:true,
+	   slidesToShow: 1, /*何枚スライドを表示させるか*/
+	   adaptiveHeight: false, /*画像の高さがバラバラのとき自動的に高さを変える*/
+	   autoplay: true,　/*自動再生*/
+	   autoplaySpeed: 3000, /*自動再生速度 1000が1秒です*/
+	   speed: 2000, /*めくる速度*/
+		/*その他足したければここに書き足す*/
+	  });
+	});
+</script>
+<!--スライド用設定 ここまで-->
+</body>
+</html>
