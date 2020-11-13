@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>同女生も知らないプチ情報サイト</title>
+	<link rel="shortcut icon" href="image/top/fabikon.png">
+	<link href="css/kojima.css" rel="stylesheet" type="text/css">
+	  <link href="main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme3.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+ <div class="logo"><a href="index.html"><img src="image/top/logo2.png"></a></div>
+ <div class="line"></div>
+<menu class="left">
+	<table>
+		<tr><td><a href="hirose.html"><img src="image/top/hirose2.png"></a></td>
+			<td class="a"><a href="hirose.html">意外と知らない?<br>MSCレンタル機材</a></td></tr>
+		<tr><td><a href="kanou.html"><img src="image/top/kanou2.png"></a></td>
+			<td class="a"><a href="kanou.html">同志社女子大学の<br>アートなモノたち</a></td></tr>
+		<tr><td><a href="kojima.html"><img src="image/top/kojima2.png"></a></td>
+			<td class="a"><a href="kojima.html">DWCat！<br>~同女の猫に癒されたい~</a></td></tr>
+		<tr><td><a href="miura.html"><img src="image/top/miura2.png"></a></td>
+			<td class="a"><a href="miura.html">ラーコモ完全攻略<br>マニュアル</a></td></tr>
+		<tr><td><a href="yahanashi.html"><img src="image/top/yahanashi2.png"></a></td>
+			<td><a href="yahanashi.html">同女快適放浪旅</a></td></tr>
+	</table>
+</menu>
+  
+  <div class="right">
+	<div class="title"><h1>DWCat！〜同女の猫に癒されたい〜</h1>
+	<strong class="writer">小嶋</strong></div>
+	
+	
+	
+	<div class="article">
+	  <section class="big slider">
+		<div><img src="image/kojima/cat1.JPG"><p>昨年(2017年)の昼下がりに無防備に昼寝をしている姿。<br>
+		腕も脚をだらしなく伸ばして眠る姿はどこか人間みがあって可愛い(^o^)</p></div>
+		<div><img src="image/kojima/cat2.JPG"><p>今年の夏のある日。暑さのあまりに伸びるねこたち。<br>
+		腕を体の下にしまっているところが可愛い！</p></div>
+		<div><img src="image/kojima/cat3.JPG"><p>そっくりな猫二匹。<br>兄弟かな？</p></div>
+		<div><img src="image/kojima/cat4.JPG"><p>春のある日。<br>手前の猫は1枚目と同じ猫だと気がついた。<br>脚を伸ばして寝るのが癖？？<br>3匹の母猫であることも発見！</p></div>
+		<div><img src="image/kojima/cat5.JPG"><p>最近よく見かける猫。<br>とっても美人！</p></div>
+		<div><img src="image/kojima/cat6.JPG"><p>最新の一枚。<br>右の猫が左の猫に頭をのせてくっついていたのがとても可愛かったです！</p></div>
+		<div><img src="image/kojima/cat7.gif"><p>母猫のしっぽで遊んだり、兄弟で戯れる子猫の可愛い瞬間を激写！！<br>GIF画像にしてみました！<br>奇跡の瞬間！</p></div>
+	  </section>
+
+	  <section class="center slider">
+		<div><img src="image/kojima/minicat1.JPG"></div>
+		<div><img src="image/kojima/minicat2.JPG"></div>
+		<div><img src="image/kojima/minicat3.JPG"></div>
+		<div><img src="image/kojima/minicat4.JPG"></div>
+		<div><img src="image/kojima/minicat5.JPG"></div>
+		<div><img src="image/kojima/minicat6.JPG"></div>
+		<div><img src="image/kojima/minicat7.gif"></div>
+	  </section>
+	  <br><br>
+	  
+	  <h2>同志社女子大学で猫と接するうえでのルール</h2>
+	  <p>・無責任に野良ネコに餌を与えないでください。<br>
+	  ・撫でようとしたりすると噛まれたり引っかかれたりする可能性があります。外傷だけでなく感染症のリスクがあります。</p><br>
+	  
+	  <p>大学内にも注意喚起の看板が設置されています。是非合わせてご覧ください。<br>
+	  あまり近づかずにこっそり猫を見守りましょう！</p><br>
+	</div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+		 $('.big').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.center',
+		  adaptiveHeight: false,
+		});
+		$('.center').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  asNavFor: '.big',
+		  dots: true,
+		  centerMode: true,
+		  focusOnSelect: true
+		});
+	
+    });
+</script>
+
+</body>
+</html>
